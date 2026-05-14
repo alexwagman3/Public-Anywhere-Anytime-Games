@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    -webkit-tap-highlight-color: transparent;
+  }
+  body {
+    @apply bg-stone-50 text-stone-900 antialiased;
+    @apply dark:bg-stone-950 dark:text-stone-100;
+    font-family: 'Inter', ui-sans-serif, system-ui, sans-serif;
+    font-feature-settings: 'cv02', 'cv03', 'cv04', 'cv11';
+  }
+  ::selection {
+    @apply bg-amber-300/60 dark:bg-amber-500/40;
+  }
+}
+
+@layer components {
+  .prose-rules {
+    @apply text-[15px] leading-relaxed text-stone-700 dark:text-stone-300;
+  }
+  .prose-rules p {
+    @apply mb-3 last:mb-0;
+  }
+  .prose-rules h3 {
+    @apply mt-5 mb-2 font-semibold text-stone-900 dark:text-stone-100 text-base;
+  }
+  .prose-rules ul {
+    @apply list-disc pl-5 mb-3 space-y-1;
+  }
+  .prose-rules ol {
+    @apply list-decimal pl-5 mb-3 space-y-1;
+  }
+  .prose-rules em {
+    @apply italic text-stone-600 dark:text-stone-400;
+  }
+  .prose-rules strong {
+    @apply font-semibold text-stone-900 dark:text-stone-100;
+  }
+  .prose-rules code {
+    @apply px-1 py-0.5 rounded bg-stone-200/70 dark:bg-stone-800 text-[13px];
+  }
+}
