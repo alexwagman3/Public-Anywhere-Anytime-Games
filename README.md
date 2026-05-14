@@ -58,8 +58,10 @@ public/
 
 ## Add your own game
 
-The catalog lives in [`src/data/games.ts`](./src/data/games.ts). To contribute
-a new game:
+See [CONTRIBUTING.md](./CONTRIBUTING.md) for full editorial guidelines.
+
+The catalog lives in [`src/data/games.ts`](./src/data/games.ts). The short
+version:
 
 1. Fork the repo and create a branch.
 2. Append a new `Game` object to the `GAMES` array. Use an existing entry as a
