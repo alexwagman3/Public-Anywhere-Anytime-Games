@@ -705,6 +705,147 @@ Going clockwise, draw one card. Each card has an action. A common standard:
     skills: ['memory', 'verbal', 'observation'],
     tags: ['drinking', 'adult', 'party', 'counting'],
   },
+
+  // ──────────────────────────────────────────────────────────────────────
+  {
+    id: 'twenty-questions',
+    name: 'Twenty Questions',
+    aliases: ['20 Q'],
+    short_description:
+      'One player picks a secret. Everyone else has twenty yes/no questions to figure it out.',
+    rules: `One player thinks of a person, place, thing, or concept and keeps it secret. Everyone else has up to twenty yes/no questions — combined — to figure out what it is.
+
+### How to play
+1. Picker silently chooses a noun. They commit to it; no changing mid-game.
+2. Optionally, picker can name the category: "person, place, or thing."
+3. Other players take turns asking **yes/no questions only**. Picker answers truthfully ("yes," "no," or "I don't know" — the last counts as a question).
+4. At any point a player can guess the actual answer. A wrong guess uses one of the twenty questions.
+5. **Got it in 20:** guessers win. **Didn't:** picker wins and reveals the answer.
+
+### Tips
+- Strong openers: *Is it alive? Is it bigger than a refrigerator? Could you find it in a kitchen?*
+- Resist the urge to guess too early — narrow the space first.
+- The picker should pick things with crisp yes/no edges. "Beauty" is a nightmare. "A toaster" is great.
+
+### Variants
+- **Animal, Vegetable, Mineral.** Picker must announce the category before play begins.
+- **Speed 20.** Each question on a 5-second timer.
+- **Reverse.** The picker thinks of a category; the guessers try to figure out the category by naming items, and the picker says whether each is "in" or "out."`,
+    players_min: 2,
+    players_max: 99,
+    age_min: 6,
+    duration_minutes: [5, 20],
+    energy: 'calm',
+    setting: ['car', 'walking', 'table', 'bedtime', 'anywhere'],
+    equipment: 'none',
+    skills: ['logic', 'verbal', 'memory'],
+    tags: ['classic', 'kid-friendly', 'travel', 'thinking'],
+  },
+
+  // ──────────────────────────────────────────────────────────────────────
+  {
+    id: 'i-spy',
+    name: 'I Spy',
+    short_description:
+      'I spy, with my little eye, something… green. Guess what it is.',
+    rules: `One player picks an object they can see and gives a single clue: a color, shape, or first letter. Everyone else looks around and guesses what it is.
+
+### How to play
+1. Spier silently picks an object they can currently see.
+2. They say: *"I spy, with my little eye, something **[color/shape/letter]**."*
+3. Other players take turns guessing by naming objects in the environment.
+4. Spier answers "yes" or "no" to each guess.
+5. Whoever guesses correctly becomes the next spier.
+
+### Variants
+- **First-letter mode:** Spier names the first letter — "something beginning with **B**." Best for kids learning letters.
+- **Shape mode:** "Something **triangular**."
+- **Adjective mode (harder):** Spier picks any adjective — "something **embarrassing**" or "something **forgotten**." Welcome to thinking.
+
+### Tips
+- The object has to stay visible the whole round. No picking the bird that just flew off.
+- Younger players spy from arm's reach. Older players spy from across the room.
+- A classic for car trips. Works at restaurants while waiting for food.`,
+    players_min: 2,
+    players_max: 8,
+    age_min: 4,
+    duration_minutes: [5, 30],
+    energy: 'calm',
+    setting: ['car', 'outdoor', 'walking', 'table', 'anywhere'],
+    equipment: 'none',
+    skills: ['observation', 'verbal'],
+    tags: ['classic', 'kid-friendly', 'travel', 'family'],
+  },
+
+  // ──────────────────────────────────────────────────────────────────────
+  {
+    id: 'categories',
+    name: 'Categories',
+    aliases: ['The Name Game', 'A–Z'],
+    short_description:
+      'Pick a category. Go around the circle naming items. Don\'t repeat. Don\'t hesitate.',
+    rules: `Someone names a category. Going around the circle, each player names one item that fits. No repeats. No long hesitations. First person to stall or repeat is out.
+
+### How to play
+1. Reader names the category — "U.S. presidents," "things in a bathroom," "breeds of dog."
+2. Going clockwise, each player has ~3 seconds to name one item.
+3. **Repeats are out. Long pauses (3+ seconds) are out. Wrong-category items are out.**
+4. Continue until only one player remains, then pick a new category.
+
+### Variants
+- **A–Z mode:** Each item must start with the next letter of the alphabet. Round 1 player says an A item, round 2 player says a B item, and so on.
+- **Specific count:** First to name 10 items in the category wins, no repeats.
+- **Rhyme variant:** Each item must rhyme with the last word said.
+
+### Tips
+- The category itself is the game: too easy and it lasts forever, too narrow and it ends in one round. "Things in a hardware store" is a good target.
+- Younger players get longer thinking time. Adjust to taste.
+- Works perfectly in a car. No equipment, no setup, no end of categories.`,
+    players_min: 2,
+    players_max: 12,
+    age_min: 6,
+    duration_minutes: [5, 30],
+    energy: 'medium',
+    setting: ['car', 'walking', 'table', 'anywhere'],
+    equipment: 'none',
+    skills: ['memory', 'verbal'],
+    tags: ['classic', 'kid-friendly', 'travel', 'family'],
+  },
+
+  // ──────────────────────────────────────────────────────────────────────
+  {
+    id: 'telephone',
+    name: 'Telephone',
+    aliases: ['Whisper Down the Lane', 'Chinese Whispers'],
+    short_description:
+      'Whisper a sentence to the next person. By the time it loops back, it\'s unrecognizable.',
+    rules: `Players sit in a circle or line. The first person whispers a sentence — exactly once — to the next person. Each subsequent player whispers what they heard to the next. The last person says it out loud. Compare to the original.
+
+### How to play
+1. Pick a starter. They quietly think of a sentence. Best: something specific, like *"My grandmother makes the world's worst banana pudding."*
+2. Starter whispers it once — **only once** — to the next person. No repeats, no clarifications.
+3. That person whispers what they heard to the next. Continue around the circle.
+4. The last person says aloud what they heard. The starter reveals the original.
+5. Laugh.
+
+### Tips
+- The longer the chain, the funnier the mutation. 6+ players is the sweet spot.
+- Whisper carefully but not perfectly. The whole point is the slow erosion of accuracy.
+- Use sentences with unusual proper nouns, food, or specific numbers — those mutate the most.
+
+### Variants
+- **Telephone Pictionary:** Person 1 writes a sentence at the top of a paper. Person 2 draws it below and folds the sentence away. Person 3 writes a caption for the drawing, folds the drawing away. Continue. At the end, unfold and witness the chaos. Needs paper.
+- **Foreign accent mode:** Everyone must whisper in a (terrible, respectful) accent of their choosing. Wildly increases mutation rate.`,
+    players_min: 4,
+    players_max: 20,
+    age_min: 5,
+    duration_minutes: [5, 15],
+    energy: 'medium',
+    setting: ['table', 'outdoor', 'anywhere'],
+    equipment: 'none',
+    skills: ['memory', 'verbal', 'observation'],
+    tags: ['classic', 'kid-friendly', 'family', 'group'],
+  },
 ];
 
 // Stable id → game lookup for permalinks.
